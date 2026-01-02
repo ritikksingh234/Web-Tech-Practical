@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditional & Loops</title>
+</head>
+<body>
+<h2>Conditional Statements & Loops</h2>
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="runLoops()">Run Loops</button>
+<p id="output"></p>
+
+<script>
+function runLoops() {
+    let n = parseInt(document.getElementById('num').value);
+    if(isNaN(n)) { document.getElementById('output').innerText='Enter a valid number'; return; }
+
+    let text = '';
+    for(let i=1;i<=n;i++) text += i + ' ';
+    text += '\n';
+    let j=1;
+    while(j<=n){ text += j + ' '; j++; }
+    text += '\n';
+    let k=1;
+    do{ text += k + ' '; k++; } while(k<=n);
+    document.getElementById('output').innerText = text;
+}
+</script>
+</body>
+</html>

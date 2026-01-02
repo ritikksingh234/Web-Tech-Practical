@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Show/Hide & Toggle Class</title>
+<style>
+.hidden { display:none; }
+.red { color:red; font-weight:bold; }
+</style>
+</head>
+<body>
+<h2 id="text">This is some text</h2>
+<button onclick="toggleText()">Show/Hide</button>
+<button onclick="toggleRed()">Toggle Red</button>
+
+<script>
+function toggleText(){
+  let el = document.getElementById('text');
+  el.classList.toggle('hidden');
+}
+function toggleRed(){
+  document.getElementById('text').classList.toggle('red');
+}
+</script>
+</body>
+</html>

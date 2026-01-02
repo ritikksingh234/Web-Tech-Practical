@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Manipulate Elements</title></head>
+<body>
+<h2>List of Items</h2>
+<ul id="list">
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+<button onclick="addItem()">Add Item</button>
+<button onclick="removeItem()">Remove Last</button>
+
+<script>
+function addItem(){
+  let li = document.createElement('li');
+  li.innerHTML = 'New Item';
+  document.getElementById('list').appendChild(li);
+}
+function removeItem(){
+  let ul = document.getElementById('list');
+  if(ul.lastChild) ul.removeChild(ul.lastChild);
+}
+</script>
+</body>
+</html>

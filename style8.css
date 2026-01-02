@@ -1,0 +1,29 @@
+/* Universal selector */
+* {
+font-family: Arial, sans-serif;
+}
+
+/* Class selector */
+.class-example {
+color: blue;
+font-weight: bold;
+}
+
+/* ID selector */
+#id-example {
+color: green;
+font-style: italic;
+}
+
+/* Descendant selector */
+.parent p {
+background-color: #f0f0f0;
+padding: 10px;
+border-left: 4px solid red;
+}
+
+/* Group selector */
+p, span {
+margin: 10px 0;
+color: #333;
+}
